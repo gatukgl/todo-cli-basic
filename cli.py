@@ -1,9 +1,9 @@
-import click
 from PyInquirer import prompt
 
 
 def get_todos():
     return ['hey', 'hello']
+
 
 def show_todos(todos):
     print('All my todos 👉')
@@ -11,9 +11,8 @@ def show_todos(todos):
         print(f'🔮 {item}')
 
 
-@click.command()
 def main():
-    click.echo("My todos list.")
+    print("My todos list.")
     questions = {
         'type': 'input',
         'name': 'command',
